@@ -1,0 +1,126 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Classic Spaghetti Carbonara",
+    "recipe_img": "https://i.ibb.co/bg2CmZp/Classic-Spaghetti-Carbonara.jpg",
+    "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper.",
+    "ingredients": [
+      "200g spaghetti",
+      "3 eggs",
+      "150g pancetta",
+      "50g Parmesan cheese",
+      "1 tsp black pepper"
+    ],
+    "preparation_time": 30,
+    "calories": 450
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Grilled Lemon Herb Chicken",
+    "recipe_img": "https://i.ibb.co/vVyJ9k9/Grilled-Lemon-Herb-Chicken.jpg",
+    "description": "Tender chicken breasts marinated in lemon, garlic, and fresh herbs, then grilled to perfection.",
+    "ingredients": [
+      "500g chicken breasts",
+      "1 lemon",
+      "4 garlic cloves",
+      "2 tbsp fresh herbs (such as rosemary and thyme)",
+      "3 tbsp olive oil"
+    ],
+    "preparation_time": 25,
+    "calories": 320
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Vegetable Stir-Fry",
+    "recipe_img": "https://i.ibb.co/pW2HqGY/Vegetable-Stir-Fry.jpg",
+    "description": "A colorful mix of fresh vegetables stir-fried in a savory sauce, served over rice or noodles.",
+    "ingredients": [
+      "200g broccoli florets",
+      "2 bell peppers",
+      "150g carrots",
+      "100g snow peas",
+      "3 tbsp soy sauce",
+      "2 garlic cloves",
+      "1 inch piece ginger"
+    ],
+    "preparation_time": 20,
+    "calories": 250
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Homemade Margherita Pizza",
+    "recipe_img": "https://i.ibb.co/XbDkJH5/Homemade-Margherita-Pizza.jpg",
+    "description": "A simple and delicious pizza topped with tomatoes, fresh mozzarella, basil, and olive oil.",
+    "ingredients": [
+      "1 ball (400g) pizza dough",
+      "3 tomatoes",
+      "200g fresh mozzarella cheese",
+      "handful fresh basil leaves",
+      "2 tbsp olive oil"
+    ],
+    "preparation_time": 40,
+    "calories": 380
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Creamy Mushroom Risotto",
+    "recipe_img": "https://i.ibb.co/2g1pJnx/Creamy-Mushroom-Risotto.jpg",
+    "description": "Rich and creamy risotto made with Arborio rice, mushrooms, onions, and Parmesan cheese.",
+    "ingredients": [
+      "200g Arborio rice",
+      "250g mushrooms",
+      "1 onion",
+      "1 liter chicken or vegetable broth",
+      "100g Parmesan cheese",
+      "120ml white wine"
+    ],
+    "preparation_time": 35,
+    "calories": 400
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Honey Garlic Glazed Salmon",
+    "recipe_img": "https://i.ibb.co/KFK1s2Z/Honey-Garlic-Glazed-Salmon.jpg",
+    "description": "Flaky salmon fillets brushed with a sweet and savory honey garlic glaze, then baked or grilled.",
+    "ingredients": [
+      "4 (150g each) salmon fillets",
+      "3 tbsp honey",
+      "2 tbsp soy sauce",
+      "3 garlic cloves",
+      "1 inch piece ginger"
+    ],
+    "preparation_time": 20,
+    "calories": 320
+  },
+  {
+    "recipe_id": 7,
+    "recipe_name": "Caprese Salad",
+    "recipe_img": "https://i.ibb.co/Xy2hhtb/Caprese-Salad.jpg",
+    "description": "A refreshing salad made with ripe tomatoes, fresh mozzarella, basil leaves, and balsamic glaze.",
+    "ingredients": [
+      "4 tomatoes",
+      "200g fresh mozzarella cheese",
+      "handful fresh basil leaves",
+      "2 tbsp balsamic glaze",
+      "2 tbsp extra virgin olive oil"
+    ],
+    "preparation_time": 15,
+    "calories": 200
+  },
+  {
+    "recipe_id": 8,
+    "recipe_name": "Beef Stir-Fry with Broccoli",
+    "recipe_img": "https://i.ibb.co/GF4Zb6v/Beef-Stir-Fry-with-Broccoli.jpg",
+    "description": "Tender strips of beef stir-fried with broccoli florets in a flavorful sauce, served over rice.",
+    "ingredients": [
+      "400g beef sirloin or flank steak",
+      "250g broccoli florets",
+      "3 tbsp soy sauce",
+      "3 garlic cloves",
+      "1 inch piece ginger",
+      "2 tbsp cornstarch"
+    ],
+    "preparation_time": 25,
+    "calories": 380
+  }
+]
