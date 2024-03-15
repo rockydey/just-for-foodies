@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { IoMdTime } from "react-icons/io";
 import { AiOutlineFire } from "react-icons/ai";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCook }) => {
   const {
     recipe_name,
     recipe_img,
@@ -12,7 +12,7 @@ const Recipe = ({ recipe }) => {
     calories,
   } = recipe;
   return (
-    <div className="card p-6 border border-[#28282833] rounded-2xl">
+    <div className='card p-6 border border-[#28282833] rounded-2xl'>
       <img className='rounded-2xl' src={recipe_img} alt='recipe image' />
       <div className='mt-6 mb-3'>
         <h4 className='text-xl font-semibold text-[#282828] mb-4'>
@@ -45,7 +45,11 @@ const Recipe = ({ recipe }) => {
             <p className='text-[#282828CC] text-base'>{calories} calories</p>
           </div>
         </div>
-        <button className='bg-[#0BE58A] py-5 px-7 rounded-full border border-[#0BE58A] text-[#150B2B] text-xl font-semibold cursor-pointer'>
+        <button
+          onClick={() => {
+            handleWantToCook(recipe);
+          }}
+          className='bg-[#0BE58A] py-3 px-6 rounded-full border border-[#0BE58A] text-[#150B2B] text-lg font-medium cursor-pointer'>
           Want to Cook
         </button>
       </div>
@@ -55,6 +59,7 @@ const Recipe = ({ recipe }) => {
 
 Recipe.propTypes = {
   recipe: PropTypes.object.isRequired,
+  handleWantToCook: PropTypes.func.isRequired,
 };
 
 export default Recipe;

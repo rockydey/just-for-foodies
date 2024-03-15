@@ -1,7 +1,32 @@
+import { useState } from "react";
 import Cooking from "../Cooking/Cooking";
 import Recipes from "../Recipes/Recipes";
+import { ToastContainer, toast } from "react-toastify";
 
 const RecipeContainer = () => {
+  const [wantToCooks, setWantToCooks] = useState([]);
+
+  const handleWantToCook = (item) => {
+    const filterItems = wantToCooks.filter(
+      (cookItem) => cookItem.recipe_id === item.recipe_id
+    );
+    if (filterItems.length === 0) {
+      const newItem = [...wantToCooks, item];
+      setWantToCooks(newItem);
+      console.log(wantToCooks)
+    } else {
+      filterItems.forEach((filterItem) => {
+        if (filterItem.recipe_id !== item.recipe_id) {
+            const newItem = [...wantToCooks, item];
+            setWantToCooks(newItem);
+            console.log(wantToCooks);
+        } else {
+          toast("Item already added to cook!");
+        }
+      });
+    }
+  };
+
   return (
     <div className='max-w-[1320px] mx-auto my-[100px]'>
       <div>
@@ -15,9 +40,10 @@ const RecipeContainer = () => {
         </p>
       </div>
       <div className='md:flex gap-6'>
-        <Recipes></Recipes>
-        <Cooking></Cooking>
+        <Recipes handleWantToCook={handleWantToCook}></Recipes>
+        <Cooking wantToCooks={wantToCooks}></Cooking>
       </div>
+      <ToastContainer />
     </div>
   );
 };
