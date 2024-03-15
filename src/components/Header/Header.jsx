@@ -4,10 +4,10 @@ import { CgProfile } from "react-icons/cg";
 const Header = () => {
   return (
     <div className='max-w-[1320px] mx-auto'>
-      <div className='navbar bg-base-100'>
+      <div className='navbar px-2 lg:px-0 '>
         <div className='navbar-start'>
           <div className='dropdown'>
-            <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
+            <div tabIndex={0} role='button' className='btn btn-ghost pl-0 lg:hidden'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-5 w-5'
