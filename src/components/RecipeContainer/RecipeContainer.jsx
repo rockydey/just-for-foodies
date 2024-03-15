@@ -27,7 +27,7 @@ const RecipeContainer = () => {
 
   return (
     <div className='max-w-[1320px] mx-auto my-[100px]'>
-      <div>
+      <div className="px-2">
         <h3 className='text-center text-4xl font-semibold text-[#150B2B] mb-6'>
           Our Recipes
         </h3>

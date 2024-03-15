@@ -11,7 +11,7 @@ const Recipes = ({ handleWantToCook }) => {
       .then((data) => setRecipes(data));
   }, []);
   return (
-    <div className='md:w-[55%] grid grid-cols-1 lg:grid-cols-2 gap-6'>
+    <div className='w-full md:w-[55%] grid grid-cols-1 lg:grid-cols-2 gap-6'>
       {recipes.map((recipe) => (
         <Recipe
           key={recipe.recipe_id}

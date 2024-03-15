@@ -26,7 +26,7 @@ const Cooking = ({ wantToCooks, setWantToCooks }) => {
     });
   }, [cookingItems]);
   return (
-    <div className='md:w-[45%] border border-[#28282833] py-8 rounded-2xl'>
+    <div className='w-full md:w-[45%] border border-[#28282833] py-8 rounded-2xl'>
       <div className='mb-8'>
         <h3 className='text-center text-[#282828] font-semibold text-2xl'>
           Want to Cook: 0{wantToCooks.length}
