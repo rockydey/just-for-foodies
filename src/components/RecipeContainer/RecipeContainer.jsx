@@ -13,13 +13,11 @@ const RecipeContainer = () => {
     if (filterItems.length === 0) {
       const newItem = [...wantToCooks, item];
       setWantToCooks(newItem);
-      console.log(wantToCooks)
     } else {
       filterItems.forEach((filterItem) => {
         if (filterItem.recipe_id !== item.recipe_id) {
-            const newItem = [...wantToCooks, item];
-            setWantToCooks(newItem);
-            console.log(wantToCooks);
+          const newItem = [...wantToCooks, item];
+          setWantToCooks(newItem);
         } else {
           toast("Item already added to cook!");
         }
@@ -39,9 +37,9 @@ const RecipeContainer = () => {
           elementum mauris aenean neque.{" "}
         </p>
       </div>
-      <div className='md:flex gap-6'>
+      <div className='flex flex-col-reverse md:flex-row items-start gap-6'>
         <Recipes handleWantToCook={handleWantToCook}></Recipes>
-        <Cooking wantToCooks={wantToCooks}></Cooking>
+        <Cooking wantToCooks={wantToCooks} setWantToCooks={setWantToCooks}></Cooking>
       </div>
       <ToastContainer />
     </div>
