@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Cooking = ({ wantToCooks, setWantToCooks }) => {
   const [cookingItems, setCookingItems] = useState([]);
@@ -16,14 +16,15 @@ const Cooking = ({ wantToCooks, setWantToCooks }) => {
     );
     const newCookItem = [...cookingItems, findItem];
     setCookingItems(newCookItem);
-
+  };
+  useEffect(() => {
     cookingItems.forEach((cookedItem) => {
       const totalCookedTime = totalTime + cookedItem.preparation_time;
       setTotalTime(totalCookedTime);
       const totalGainCalories = totalCalories + cookedItem.calories;
       setTotalCalories(totalGainCalories);
     });
-  };
+  }, [cookingItems]);
   return (
     <div className='md:w-[45%] border border-[#28282833] py-8 rounded-2xl'>
       <div className='mb-8'>
