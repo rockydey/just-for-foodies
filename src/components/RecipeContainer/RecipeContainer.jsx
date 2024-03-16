@@ -19,7 +19,7 @@ const RecipeContainer = () => {
           const newItem = [...wantToCooks, item];
           setWantToCooks(newItem);
         } else {
-          toast("Item already added to cook!");
+          toast(`${item.recipe_name} already added to cook!`);
         }
       });
     }

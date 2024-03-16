@@ -107,7 +107,7 @@ const Cooking = ({ wantToCooks, setWantToCooks }) => {
                   <th></th>
                 ) : (
                   <th>
-                    Total Time = <span className='block'></span> ${totalTime}{" "}
+                    Total Time = <span className='block'></span> {totalTime}{" "}
                     minutes
                   </th>
                 )}
