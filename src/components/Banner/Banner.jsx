@@ -12,12 +12,14 @@ const Banner = () => {
         <div className='hero-content text-center'>
           <div className='px-2 md:px-10 lg:px-52'>
             <h1 className='mb-6 text-3xl md:text-4xl lg:text-5xl text-white font-bold leading-tight'>
-              Discover an exceptional cooking class tailored for you!
+              Savor Excellence: Unforgettable Dining Awaits
             </h1>
             <p className='mb-6 text-white'>
-              Learn and Master Basic Programming, Data Structures, Algorithm,
-              OOP, Database and solve 500+ coding problems to become an
-              exceptionally well world-class Programmer.
+              Welcome to JustForFoodies, where culinary mastery meets
+              exceptional service. Indulge in a culinary journey unlike any
+              other, where every dish is a masterpiece crafted with passion and
+              precision. Join us for an unforgettable dining experience filled
+              with exquisite flavors and cherished moments.
             </p>
             <div className='flex flex-col md:flex-row gap-7 justify-center items-center'>
               <button className='bg-[#0BE58A] py-5 px-7 rounded-full border border-[#0BE58A] text-[#150B2B] text-xl font-semibold cursor-pointer'>
